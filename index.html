@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" content="width=device-width" />
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/EquipmentSearch.js"></script>
+    <link href="styles.css?" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Spartan PHALANX</h1>
+    </header>
+  
+    <div id="searchContent">
+        <div>
+            <h3>Equipment Search</h3>
+            <button id="btnUnitNoId" onclick="selectSearchType(0)" class="btn unit"> Unit No.</button><!--
+        --><button id="btnTypeId" onclick="selectSearchType(1)" class="btn item">Item No.</button>
+
+            <div>
+                <input id="searchBarId" type="text" placeholder="Enter term to search" /><input id="searchButton" type="image"  src="search.png" alt="submit"/>
+            </div>
+
+            <div id="equipmentListDivID">
+                <h4>Results</h4>
+                <ul id="equipmentListItems"></ul>
+            </div>
+        </div> 
+    </div>
+
+    <div class="navbar">
+        <a>Back</a>
+        <a>Options</a>
+
+    </div>
+     
+    
+</body>
+</html>
